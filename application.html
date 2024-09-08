@@ -1,37 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>YellowStone - Application</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
 </head>
 <body>
 
-<div class="b-example- divider"></div>
+
 
 <div class="container my-5">
     <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg justify-content-center">
         <div class="col-lg-12 p-3 p-lg-5 pt-lg-3">
-
+            <form id="App-form" class="needs-validation" novalidate>
             <div class="d-flex align-items-start">
-                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <button class="nav-link active" id="v-pills-Personal-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Personal" type="button" role="tab" aria-controls="v-pills-Personal" aria-selected="true">Personal Information</button>
-                    <button class="nav-link" id="v-pills-Position-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Position" type="button" role="tab" aria-controls="v-pills-Position" aria-selected="false">Position</button>
-                    <button class="nav-link" id="v-pills-WrkExp-tab" data-bs-toggle="pill" data-bs-target="#v-pills-WrkExp" type="button" role="tab" aria-controls="v-pills-WrkExp" aria-selected="false">Work experience</button>
-                    <button class="nav-link" id="v-pills-Education-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Education" type="button" role="tab" aria-controls="v-pills-Education" aria-selected="false">Education</button>
+                <div class="nav  flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <button class="nav-link active" id="v-pills-Personal-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-Personal" type="button" role="tab" aria-controls="v-pills-Personal"
+                            aria-selected="true">Personal Information
+                    </button>
+                    <button class="nav-link" id="v-pills-Position-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-Position" type="button" role="tab" aria-controls="v-pills-Position"
+                            aria-selected="false">Position
+                    </button>
+                    <button class="nav-link" id="v-pills-WrkExp-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-WrkExp" type="button" role="tab" aria-controls="v-pills-WrkExp"
+                            aria-selected="false">Work experience
+                    </button>
+                    <button class="nav-link" id="v-pills-Education-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-Education" type="button" role="tab"
+                            aria-controls="v-pills-Education" aria-selected="false">Education
+                    </button>
                 </div>
                 <div class="tab-content w-100 h-100" id="v-pills-tabContent">
 
-                    <div class="tab-pane fade show active" id="v-pills-Personal" role="tabpanel" aria-labelledby="v-pills-Personal-tab" tabindex="0">
-                 <h4> Please fill in your personal Information</h4>
+                    <div class="tab-pane fade show active" id="v-pills-Personal" role="tabpanel"
+                         aria-labelledby="v-pills-Personal-tab" tabindex="0">
+                        <h4> Please fill in your personal Information</h4>
                         <!--form-->
-                        <form class="row g-3 needs-validation" novalidate>
+
                             <!-- first name-->
                             <div class="col-md-6">
-                                <label for="validationCustom01" class="form-label">First name</label>
-                                <input type="text" class="form-control" id="validationCustom01"  required>
+                                <label for="FirstName" class="form-label">First name</label>
+                                <input type="text" class="form-control" id="FirstName" required>
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -41,8 +55,8 @@
                             </div>
                             <!-- last name-->
                             <div class="col-md-6">
-                                <label for="validationCustom02" class="form-label">Last name</label>
-                                <input type="text" class="form-control" id="validationCustom02"  required>
+                                <label for="LastName" class="form-label">Last name</label>
+                                <input type="text" class="form-control" id="LastName" required>
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -53,8 +67,9 @@
                             <!-- DOB -->
 
                             <div class="col-md-6">
-                                <label for="validationCustom03" class="form-label">Birthday</label> <!-- fill in with js-->
-                                <input type="date" class="form-control" id="validationCustom03"  required>
+                                <label for="DOB" class="form-label">Birthday</label>
+                                <!-- fill in with js-->
+                                <input type="date" class="form-control" id="DOB" required>
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -65,8 +80,8 @@
 
                             <!-- email-->
                             <div class="col-md-6">
-                                <label for="validationCustom04" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="validationCustom04"  required>
+                                <label for="Email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="Email" required>
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -76,8 +91,9 @@
                             </div>
                             <!--Phone-->
                             <div class="col-md-6">
-                                <label for="validationCustom05" class="form-label">Phone</label>
-                                <input type="tel" class="form-control" id="validationCustom05" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                                <label for="Phone" class="form-label">Phone</label>
+                                <input type="tel" class="form-control" id="Phone"
+                                       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -87,8 +103,8 @@
                             </div>
                             <!-- address -->
                             <div class="col-md-6">
-                                <label for="validationCustom06" class="form-label">Address</label>
-                                <input type="text" class="form-control" id="validationCustom06"  required>
+                                <label for="Addr" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="Addr" required>
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -98,8 +114,8 @@
                             </div>
                             <!-- city -->
                             <div class="col-md-6">
-                                <label for="validationCustom07" class="form-label">City</label>
-                                <input type="text" class="form-control" id="validationCustom07" required>
+                                <label for="City" class="form-label">City</label>
+                                <input type="text" class="form-control" id="City" required>
                                 <div class="invalid-feedback">
                                     Please provide a valid city.
                                 </div>
@@ -107,8 +123,8 @@
                             </div>
                             <!-- state -->
                             <div class="col-md-6">
-                                <label for="validationCustom08" class="form-label">State</label>
-                                <select class="form-select" id="validationCustom08" required>
+                                <label for="State" class="form-label">State</label>
+                                <select class="form-select" id="State" required>
                                     <option selected disabled value="">Choose...</option>
                                     <option value="AL">Alabama</option>
                                     <option value="AK">Alaska</option>
@@ -168,444 +184,47 @@
                             </div>
                             <!-- Zip-->
                             <div class="col-md-6">
-                                <label for="validationCustom09" class="form-label">Zip</label>
-                                <input type="number" class="form-control" id="validationCustom09" min="10000" max="99999" required>
+                                <label for="Zip" class="form-label">Zip</label>
+                                <input type="number" class="form-control" id="Zip" min="10000"
+                                       max="99999" required>
                                 <div class="invalid-feedback">
                                     Please provide a valid zip.
                                 </div>
                             </div>
 
-                            <button class="btn btn-primary" type="submit">Submit form</button>
-
-
-                        </form>
+                        <div class="mt-2">
+                            <button class="btn btn-primary nextsec" type="button">Continue</button>
+                        </div>
 
                     </div>
-                    <div class="tab-pane fade" id="v-pills-Position" role="tabpanel" aria-labelledby="v-pills-Position-tab" tabindex="0">
+                    <div class="tab-pane fade" id="v-pills-Position" role="tabpanel"
+                         aria-labelledby="v-pills-Position-tab" tabindex="0">
 
                         <div class="container">
                             <!-- Position -->
-                            <div class="p-3" >
+                            <div class="p-3">
                                 <div class="container p-3">
                                     <h4>Select your desired position(s) </h4>
 
+                                    <p> Are you a spouse, dependent, relative, or Domestic Partner of a National Park Service
+                                        employee?</p>
 
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Do you require housing?
-                                        </label>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input Spouse_NPS_Employee" type="radio" name="Spouse_NPS_Employee" id="Spouse_NPS_EmployeeY" value="Y" required>
+                                        <label class="form-check-label" for="Spouse_NPS_EmployeeY">Yes</label>
                                     </div>
-                                    <div class="container">
-                                        <div class="row mt-3 ">
-                                            <ul class="nav nav-tabs  nav-fill flex-column flex-md-row text-light"  id="PositionTabs" role="tablist">
-                                                <li class="nav-item d-flex" role="presentation">
-                                                    <button class="nav-link active tab" id="Position01-tab" data-bs-toggle="tab" data-bs-target="#Position01-tab-pane" type="button" role="tab" aria-controls="Position01-tab-pane" aria-selected="true">First Position</button>
-                                                </li>
-                                                <li class="nav-item"  role="presentation">
-                                                    <button class="nav-link d-flex justify-content-center tab" id="Position02-tab" data-bs-toggle="tab" data-bs-target="#Position02-tab-pane" type="button" role="tab" aria-controls="Position02-tab-pane" aria-selected="false">Second Position (optional)</button>
-                                                </li>
-                                                <li class="nav-item" role="presentation">
-                                                    <button class="nav-link d-flex justify-content-center tab" id="Position03-tab" data-bs-toggle="tab" data-bs-target="#Position03-tab-pane" type="button" role="tab" aria-controls="Position03-tab-pane" aria-selected="false">Third Position (optional)</button>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="tab-content" id="PositionTabsContent">
-                                            <div class="tab-pane fade show active" id="Position01-tab-pane" role="tabpanel" aria-labelledby="Contact-tab" tabindex="0">
-                                                <div class="form-check">
-
-                                                    <label for="DesiredWorkingLocation01" class="form-label">
-                                                    Location</label>
-                                                    <select  class="form-control" id="DesiredWorkingLocation01" name="DesiredWorkingLocation01">
-                                                        <option selected="selected" value="">Select One</option>
-                                                        <option value="CORPORATE HEADQUATERS">Corporate Headquarters</option>
-                                                        <option value="BRYCE CANYON LODGE">Bryce Canyon Lodge</option>
-                                                        <option value="BURR OAK STATE PARK">Burr Oak State Park</option>
-                                                        <option value="CRATER LAKE NATIONAL PARK">Crater Lake National Park</option>
-                                                        <option value="EVERGLADES NATIONAL PARK">Everglades National Park</option>
-                                                        <option value="FURNACE CREEK INN AND RANCH">Furnace Creek Inn and Ranch</option>
-                                                        <option value="GENEVA MARINA">Geneva Marina</option>
-                                                        <option value="GIDEON PUTNAM">Gideon Putnam</option>
-                                                        <option value="GRAND CANYON NATIONAL PARK - NORTH RIM">Grand Canyon National Park - North Rim</option>
-                                                        <option value="GRAND CANYON NATIONAL PARK - SOUTH RIM">Grand Canyon National Park - South Rim</option>
-                                                        <option value="HUESTON WOODS">Hueston Woods</option>
-                                                        <option value="MAUMEE BAY STATE PARK">Maumee Bay State Park</option>
-                                                        <option value="MOHICAN BAY STATE PARK RESORT AND CONFERENCE CENTER">Mohican State Park Resort and Conference Center</option>
-                                                        <option value="MOUNT RUSHMORE">Mount Rushmore</option>
-                                                        <option value="PAINTED DESERT OASIS">Painted Desert Oasis</option>
-                                                        <option value="PUNDERSON MANOR">Punderson Manor</option>
-                                                        <option value="SALT FORK RESORT AND STATE PARK">Salt Fork Resort and State Park</option>
-                                                        <option value="SCOTTYS CASTLE">Scotty's Castle</option>
-                                                        <option value="SHAWNEE STATE PARK">Shawnee State Park</option>
-                                                        <option value="SILVERADO COUNTRY CLUB AND RESORT">Silverado Country Club and Resort</option>
-                                                        <option value="STOVEPIPE WELLS">Stovepipe Wells</option>
-                                                        <option value="YELLOWSTONE NATIONAL PARK">Yellowstone National Park</option>
-                                                        <option value="ZION NATIONAL PARK">Zion National Park</option>
-                                                    </select>
-
-                                                    <label for="Position1" class="form-label">
-                                                        Position </label>
-                                                    <select  class="form-control" id="Position1"size="1">
-                                                        <option selected="selected" value=""> </option>
-                                                        <option>Dining Room Server Assistant </option>
-                                                        <option>Employee Dining Room Crew</option>
-                                                        <option>Fast Food Crew </option>
-                                                        <option>Kitchen Crew </option>
-                                                        <option>Laundry Crew</option>
-                                                        <option>Room Attendant </option>
-                                                        <option>Activities Sales Agent </option>
-                                                        <option>Administrative Assistant Maintenance </option>
-                                                        <option>Asst. HR Manager </option>
-                                                        <option>Audit Clerk </option>
-                                                        <option>Bartend attendant </option>
-                                                        <option>Driver </option>
-                                                        <option>Bus Service Person (D.L.) </option>
-                                                        <option>Cafeteria Management </option>
-                                                        <option>Camper Services Attendants </option>
-                                                        <option>Campground Attendant </option>
-                                                        <option>Campground Management </option>
-                                                        <option>Carpenter </option>
-                                                        <option>Distribution Center Associate </option>
-                                                        <option>Dock Help (D.L.) </option>
-                                                        <option>Custodian </option>
-                                                        <option>Electrician (D.L.) </option>
-                                                        <option>Finish Floor Supervisor </option>
-                                                        <option>Fire Systems Technician (D.L.) </option>
-                                                        <option>Food and Beverage Management </option>
-                                                        <option>Food and Beverage Office Assistant </option>
-                                                        <option>Front Office Management </option>
-                                                        <option>Furniture Mover (D.L.) </option>
-                                                        <option>General Accounting Office </option>
-                                                        <option>General Maintenance (D.L.) </option>
-                                                        <option>Guest Services Agent </option>
-                                                        <option>Heavy Equipment Operator (D.L.) </option>
-                                                        <option>Housekeeping Management </option>
-                                                        <option>Internship </option>
-                                                        <option>Locksmith (D.L.) </option>
-                                                        <option>Marina Fishing Guide (D.L.) </option>
-                                                        <option>Marina Manager (D.L.) </option>
-                                                        <option>Night Auditor </option>
-                                                        <option>Painter (D.L.) </option>
-                                                        <option>Pantry Supervisor </option>
-                                                        <option>Personnel Management </option>
-                                                        <option>Pianist </option>
-                                                        <option>Plumber (D.L.) </option>
-                                                        <option>Porter </option>
-                                                        <option>Preservation Maintenance Crew Craftsperson </option>
-                                                        <option>Recreation Coordinator (D.L.) </option>
-                                                        <option>Recreation Supervisor (D.L.) </option>
-                                                        <option>Recycling Technician (D.L.) </option>
-                                                        <option>Reservations Sales Agent </option>
-                                                        <option>Residence Coordinator </option>
-                                                        <option>Retail Management </option>
-                                                        <option>Retail Sales Associate </option>
-                                                        <option>Scenic Cruise Operator (D.L.) </option>
-                                                        <option>Seamstress </option>
-                                                        <option>Security Guard And Location Safety (D.L.) </option>
-                                                        <option>Snack Shop / Deli Supervisor </option>
-                                                        <option>Steward </option>
-                                                        <option>Storekeeper </option>
-                                                        <option>Tour Guide (D.L.) </option>
-                                                        <option>Traveling Night Auditor </option>
-                                                        <option>Vending Service Technician </option>
-                                                        <option>Warehouse Manager </option>
-                                                        <option>Warehouse Help </option>
-                                                    </select>
-                                                    <label for="Shift01" class="form-label">
-                                                        Shift </label>
-                                                    <select  class="form-control" id="shift01"size="1">
-                                                        <option>Day shift</option>
-                                                        <option>Evening shift</option>
-                                                        <option>3rd shift</option>
-                                                    </select>
-
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane fade" id="Position02-tab-pane" role="tabpanel" aria-labelledby="Position02-tab" tabindex="0">
-
-                                                <label for="DesiredWorkingLocation02" class="form-label">
-                                                    Location</label>
-                                                <select  class="form-control" id="DesiredWorkingLocation02" name="DesiredWorkingLocation01">
-                                                    <option selected="selected" value="">Select One</option>
-                                                    <option value="CORPORATE HEADQUATERS">Corporate Headquarters</option>
-                                                    <option value="BRYCE CANYON LODGE">Bryce Canyon Lodge</option>
-                                                    <option value="BURR OAK STATE PARK">Burr Oak State Park</option>
-                                                    <option value="CRATER LAKE NATIONAL PARK">Crater Lake National Park</option>
-                                                    <option value="EVERGLADES NATIONAL PARK">Everglades National Park</option>
-                                                    <option value="FURNACE CREEK INN AND RANCH">Furnace Creek Inn and Ranch</option>
-                                                    <option value="GENEVA MARINA">Geneva Marina</option>
-                                                    <option value="GIDEON PUTNAM">Gideon Putnam</option>
-                                                    <option value="GRAND CANYON NATIONAL PARK - NORTH RIM">Grand Canyon National Park - North Rim</option>
-                                                    <option value="GRAND CANYON NATIONAL PARK - SOUTH RIM">Grand Canyon National Park - South Rim</option>
-                                                    <option value="HUESTON WOODS">Hueston Woods</option>
-                                                    <option value="MAUMEE BAY STATE PARK">Maumee Bay State Park</option>
-                                                    <option value="MOHICAN BAY STATE PARK RESORT AND CONFERENCE CENTER">Mohican State Park Resort and Conference Center</option>
-                                                    <option value="MOUNT RUSHMORE">Mount Rushmore</option>
-                                                    <option value="PAINTED DESERT OASIS">Painted Desert Oasis</option>
-                                                    <option value="PUNDERSON MANOR">Punderson Manor</option>
-                                                    <option value="SALT FORK RESORT AND STATE PARK">Salt Fork Resort and State Park</option>
-                                                    <option value="SCOTTYS CASTLE">Scotty's Castle</option>
-                                                    <option value="SHAWNEE STATE PARK">Shawnee State Park</option>
-                                                    <option value="SILVERADO COUNTRY CLUB AND RESORT">Silverado Country Club and Resort</option>
-                                                    <option value="STOVEPIPE WELLS">Stovepipe Wells</option>
-                                                    <option value="YELLOWSTONE NATIONAL PARK">Yellowstone National Park</option>
-                                                    <option value="ZION NATIONAL PARK">Zion National Park</option>
-                                                </select>
-
-                                                <label for="Position2" class="form-label">
-                                                    Position </label>
-                                                <select  class="form-control" id="Position2"size="1">
-                                                    <option selected="selected" value=""> </option>
-                                                    <option>Dining Room Server Assistant </option>
-                                                    <option>Employee Dining Room Crew</option>
-                                                    <option>Fast Food Crew </option>
-                                                    <option>Kitchen Crew </option>
-                                                    <option>Laundry Crew</option>
-                                                    <option>Room Attendant </option>
-                                                    <option>Activities Sales Agent </option>
-                                                    <option>Administrative Assistant Maintenance </option>
-                                                    <option>Asst. HR Manager </option>
-                                                    <option>Audit Clerk </option>
-                                                    <option>Bartend attendant </option>
-                                                    <option>Driver </option>
-                                                    <option>Bus Service Person (D.L.) </option>
-                                                    <option>Cafeteria Management </option>
-                                                    <option>Camper Services Attendants </option>
-                                                    <option>Campground Attendant </option>
-                                                    <option>Campground Management </option>
-                                                    <option>Carpenter </option>
-                                                    <option>Distribution Center Associate </option>
-                                                    <option>Dock Help (D.L.) </option>
-                                                    <option>Custodian </option>
-                                                    <option>Electrician (D.L.) </option>
-                                                    <option>Finish Floor Supervisor </option>
-                                                    <option>Fire Systems Technician (D.L.) </option>
-                                                    <option>Food and Beverage Management </option>
-                                                    <option>Food and Beverage Office Assistant </option>
-                                                    <option>Front Office Management </option>
-                                                    <option>Furniture Mover (D.L.) </option>
-                                                    <option>General Accounting Office </option>
-                                                    <option>General Maintenance (D.L.) </option>
-                                                    <option>Guest Services Agent </option>
-                                                    <option>Heavy Equipment Operator (D.L.) </option>
-                                                    <option>Housekeeping Management </option>
-                                                    <option>Internship </option>
-                                                    <option>Locksmith (D.L.) </option>
-                                                    <option>Marina Fishing Guide (D.L.) </option>
-                                                    <option>Marina Manager (D.L.) </option>
-                                                    <option>Night Auditor </option>
-                                                    <option>Painter (D.L.) </option>
-                                                    <option>Pantry Supervisor </option>
-                                                    <option>Personnel Management </option>
-                                                    <option>Pianist </option>
-                                                    <option>Plumber (D.L.) </option>
-                                                    <option>Porter </option>
-                                                    <option>Preservation Maintenance Crew Craftsperson </option>
-                                                    <option>Recreation Coordinator (D.L.) </option>
-                                                    <option>Recreation Supervisor (D.L.) </option>
-                                                    <option>Recycling Technician (D.L.) </option>
-                                                    <option>Reservations Sales Agent </option>
-                                                    <option>Residence Coordinator </option>
-                                                    <option>Retail Management </option>
-                                                    <option>Retail Sales Associate </option>
-                                                    <option>Scenic Cruise Operator (D.L.) </option>
-                                                    <option>Seamstress </option>
-                                                    <option>Security Guard And Location Safety (D.L.) </option>
-                                                    <option>Snack Shop / Deli Supervisor </option>
-                                                    <option>Steward </option>
-                                                    <option>Storekeeper </option>
-                                                    <option>Tour Guide (D.L.) </option>
-                                                    <option>Traveling Night Auditor </option>
-                                                    <option>Vending Service Technician </option>
-                                                    <option>Warehouse Manager </option>
-                                                    <option>Warehouse Help </option>
-                                                </select>
-                                                <label for="Shift02" class="form-label">
-                                                    Shift </label>
-                                                <select  class="form-control" id="shift02"size="1">
-                                                    <option>Day shift</option>
-                                                    <option>Evening shift</option>
-                                                    <option>3rd shift</option>
-                                                </select>
-
-                                            </div>
-                                            <div class="tab-pane fade" id="Position03-tab-pane" role="tabpanel" aria-labelledby="Position03-tab" tabindex="0">
-                                                <label for="DesiredWorkingLocation03" class="form-label">
-                                                    Location</label>
-                                                <select  class="form-control" id="DesiredWorkingLocation03" name="DesiredWorkingLocation01">
-                                                    <option selected="selected" value="">Select One</option>
-                                                    <option value="CORPORATE HEADQUATERS">Corporate Headquarters</option>
-                                                    <option value="BRYCE CANYON LODGE">Bryce Canyon Lodge</option>
-                                                    <option value="BURR OAK STATE PARK">Burr Oak State Park</option>
-                                                    <option value="CRATER LAKE NATIONAL PARK">Crater Lake National Park</option>
-                                                    <option value="EVERGLADES NATIONAL PARK">Everglades National Park</option>
-                                                    <option value="FURNACE CREEK INN AND RANCH">Furnace Creek Inn and Ranch</option>
-                                                    <option value="GENEVA MARINA">Geneva Marina</option>
-                                                    <option value="GIDEON PUTNAM">Gideon Putnam</option>
-                                                    <option value="GRAND CANYON NATIONAL PARK - NORTH RIM">Grand Canyon National Park - North Rim</option>
-                                                    <option value="GRAND CANYON NATIONAL PARK - SOUTH RIM">Grand Canyon National Park - South Rim</option>
-                                                    <option value="HUESTON WOODS">Hueston Woods</option>
-                                                    <option value="MAUMEE BAY STATE PARK">Maumee Bay State Park</option>
-                                                    <option value="MOHICAN BAY STATE PARK RESORT AND CONFERENCE CENTER">Mohican State Park Resort and Conference Center</option>
-                                                    <option value="MOUNT RUSHMORE">Mount Rushmore</option>
-                                                    <option value="PAINTED DESERT OASIS">Painted Desert Oasis</option>
-                                                    <option value="PUNDERSON MANOR">Punderson Manor</option>
-                                                    <option value="SALT FORK RESORT AND STATE PARK">Salt Fork Resort and State Park</option>
-                                                    <option value="SCOTTYS CASTLE">Scotty's Castle</option>
-                                                    <option value="SHAWNEE STATE PARK">Shawnee State Park</option>
-                                                    <option value="SILVERADO COUNTRY CLUB AND RESORT">Silverado Country Club and Resort</option>
-                                                    <option value="STOVEPIPE WELLS">Stovepipe Wells</option>
-                                                    <option value="YELLOWSTONE NATIONAL PARK">Yellowstone National Park</option>
-                                                    <option value="ZION NATIONAL PARK">Zion National Park</option>
-                                                </select>
-
-                                                <label for="Position3" class="form-label">
-                                                    Position </label>
-                                                <select  class="form-control" id="Position3"size="1">
-                                                    <option selected="selected" value=""> </option>
-                                                    <option>Dining Room Server Assistant </option>
-                                                    <option>Employee Dining Room Crew</option>
-                                                    <option>Fast Food Crew </option>
-                                                    <option>Kitchen Crew </option>
-                                                    <option>Laundry Crew</option>
-                                                    <option>Room Attendant </option>
-                                                    <option>Activities Sales Agent </option>
-                                                    <option>Administrative Assistant Maintenance </option>
-                                                    <option>Asst. HR Manager </option>
-                                                    <option>Audit Clerk </option>
-                                                    <option>Bartend attendant </option>
-                                                    <option>Driver </option>
-                                                    <option>Bus Service Person (D.L.) </option>
-                                                    <option>Cafeteria Management </option>
-                                                    <option>Camper Services Attendants </option>
-                                                    <option>Campground Attendant </option>
-                                                    <option>Campground Management </option>
-                                                    <option>Carpenter </option>
-                                                    <option>Distribution Center Associate </option>
-                                                    <option>Dock Help (D.L.) </option>
-                                                    <option>Custodian </option>
-                                                    <option>Electrician (D.L.) </option>
-                                                    <option>Finish Floor Supervisor </option>
-                                                    <option>Fire Systems Technician (D.L.) </option>
-                                                    <option>Food and Beverage Management </option>
-                                                    <option>Food and Beverage Office Assistant </option>
-                                                    <option>Front Office Management </option>
-                                                    <option>Furniture Mover (D.L.) </option>
-                                                    <option>General Accounting Office </option>
-                                                    <option>General Maintenance (D.L.) </option>
-                                                    <option>Guest Services Agent </option>
-                                                    <option>Heavy Equipment Operator (D.L.) </option>
-                                                    <option>Housekeeping Management </option>
-                                                    <option>Internship </option>
-                                                    <option>Locksmith (D.L.) </option>
-                                                    <option>Marina Fishing Guide (D.L.) </option>
-                                                    <option>Marina Manager (D.L.) </option>
-                                                    <option>Night Auditor </option>
-                                                    <option>Painter (D.L.) </option>
-                                                    <option>Pantry Supervisor </option>
-                                                    <option>Personnel Management </option>
-                                                    <option>Pianist </option>
-                                                    <option>Plumber (D.L.) </option>
-                                                    <option>Porter </option>
-                                                    <option>Preservation Maintenance Crew Craftsperson </option>
-                                                    <option>Recreation Coordinator (D.L.) </option>
-                                                    <option>Recreation Supervisor (D.L.) </option>
-                                                    <option>Recycling Technician (D.L.) </option>
-                                                    <option>Reservations Sales Agent </option>
-                                                    <option>Residence Coordinator </option>
-                                                    <option>Retail Management </option>
-                                                    <option>Retail Sales Associate </option>
-                                                    <option>Scenic Cruise Operator (D.L.) </option>
-                                                    <option>Seamstress </option>
-                                                    <option>Security Guard And Location Safety (D.L.) </option>
-                                                    <option>Snack Shop / Deli Supervisor </option>
-                                                    <option>Steward </option>
-                                                    <option>Storekeeper </option>
-                                                    <option>Tour Guide (D.L.) </option>
-                                                    <option>Traveling Night Auditor </option>
-                                                    <option>Vending Service Technician </option>
-                                                    <option>Warehouse Manager </option>
-                                                    <option>Warehouse Help </option>
-                                                </select>
-                                                <label for="Shift03" class="form-label">
-                                                    Shift </label>
-                                                <select  class="form-control" id="shift03"size="1">
-                                                    <option>Day shift</option>
-                                                    <option>Evening shift</option>
-                                                    <option>3rd shift</option>
-                                                </select>
-
-                                            </div>
-                                        </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input Spouse_NPS_Employee" type="radio" name="Spouse_NPS_Employee" id="Spouse_NPS_EmployeeN" value="N" required>
+                                        <label class="form-check-label" for="Spouse_NPS_EmployeeN">No</label>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-WrkExp" role="tabpanel" aria-labelledby="v-pills-WrkExp-tab" tabindex="0">
 
-                        <h4>Please fill in </h4>
-                        <!-- check and expendables -->
-                        <div class="container checks">
-
-                            <p> Have you ever worked for Xanterra Parks and Resorts, Amfac Park and Resorts, Fred Harvey or TWRS company?</p>
-                            Yes
-                            <input  class="APL-PREV-EMPLOY"  name="APL-PREV-EMPLOY" value="Y" type="radio">
-                            No
-                            <input class="APL-PREV-EMPLOY"  name="APL-PREV-EMPLOY" value="N" type="radio">
-
-                            <div class="collapse" id="PREV-EMPLOY-EXPAN">
-                                <form>
-                                    <label for="APL-PREV-EMP-NBR" class="form-label"> Please enter your employee number:</label>
-                                    <input class="form-control" id="APL-PREV-EMP-NBR" name="APL-PREV-EMP-NBR" size="10" maxlength="15" type="text">
-
-                                    <label for="APL-PREV-LOC-WORK" class="form-label"> select last location worked:</label>
-                                    <select  class="form-control" id="APL-PREV-LOC-WORK" name="APL-PREV-LOC-WORK">
-                                        <option selected="selected" value="">Select One</option>
-                                        <option value="CORPORATE HEADQUATERS">Corporate Headquarters</option>
-                                        <option value="BRYCE CANYON LODGE">Bryce Canyon Lodge</option>
-                                        <option value="BURR OAK STATE PARK">Burr Oak State Park</option>
-                                        <option value="CRATER LAKE NATIONAL PARK">Crater Lake National Park</option>
-                                        <option value="EVERGLADES NATIONAL PARK">Everglades National Park</option>
-                                        <option value="FURNACE CREEK INN AND RANCH">Furnace Creek Inn and Ranch</option>
-                                        <option value="GENEVA MARINA">Geneva Marina</option>
-                                        <option value="GIDEON PUTNAM">Gideon Putnam</option>
-                                        <option value="GRAND CANYON NATIONAL PARK - NORTH RIM">Grand Canyon National Park - North Rim</option>
-                                        <option value="GRAND CANYON NATIONAL PARK - SOUTH RIM">Grand Canyon National Park - South Rim</option>
-                                        <option value="HUESTON WOODS">Hueston Woods</option>
-                                        <option value="MAUMEE BAY STATE PARK">Maumee Bay State Park</option>
-                                        <option value="MOHICAN BAY STATE PARK RESORT AND CONFERENCE CENTER">Mohican State Park Resort and Conference Center</option>
-                                        <option value="MOUNT RUSHMORE">Mount Rushmore</option>
-                                        <option value="PAINTED DESERT OASIS">Painted Desert Oasis</option>
-                                        <option value="PUNDERSON MANOR">Punderson Manor</option>
-                                        <option value="SALT FORK RESORT AND STATE PARK">Salt Fork Resort and State Park</option>
-                                        <option value="SCOTTYS CASTLE">Scotty's Castle</option>
-                                        <option value="SHAWNEE STATE PARK">Shawnee State Park</option>
-                                        <option value="SILVERADO COUNTRY CLUB AND RESORT">Silverado Country Club and Resort</option>
-                                        <option value="STOVEPIPE WELLS">Stovepipe Wells</option>
-                                        <option value="YELLOWSTONE NATIONAL PARK">Yellowstone National Park</option>
-                                        <option value="ZION NATIONAL PARK">Zion National Park</option>
-                                    </select>
-
-                                    <label for="sd6" class="form-label">Enter the date started: (mm/dd/yyyy) </label>
-                                    <input class="form-control" id="sd6" name="APL-PREV-BEG-DATE" size="12" maxlength="10" type="date">
-
-                                    <label for="ed6" class="form-label">and the date ended: (mm/dd/yyyy)</label>
-                                    <input class="form-control" id="ed6" name="APL-PREV-END-DATE" size="12" maxlength="10" type="date">
-
-                                    <p>  Have you ever been employed under a different name with any Xanterra Parks and Resorts, Amfac Parks and Resorts,
-                                        Fred Harvey or TWRS company? </p>
-                                    Yes
-                                    <input  class="Employed_Different_Name" name="Employed_Different_Name" value="Y" type="radio">
-                                    No
-                                    <input  class="Employed_Different_Name" name="Employed_Different_Name" value="N" type="radio">
-
-                                    <div class="collapse" id="Employed_Different_Name-EXPAN">
-                                        <label for="APL-FORMER-LST-NM" class="form-label"> indicate the name(s)</label>
-                                        <!-- add an add more button -->
-                                        <input class="form-control" id="APL-FORMER-LST-NM" name="APL-FORMER-LST-NM" maxlength="30" size="30"  type="text">
-                                        <label for="Different_Name_Location" class="form-label">Location</label>
-                                        <select class="form-control" id="Different_Name_Location" name="Different_Name_Location">
+                                    <div class="collapse" id="Spouse_NPS_Employee-EXPAN">
+                                        <label for="NPS_Spouse_Name" class="form-label"> indicate the name(s)</label>
+                                        <input class="form-control" id="NPS_Spouse_Name" name="NPS_Spouse_Name" maxlength="50"
+                                               size="50" type="text">
+                                        <label for="NPS_Spouse_Location" class="form-label"> location(s) of the NPS
+                                            employee.</label>
+                                        <select class="form-control" id="NPS_Spouse_Location" name="NPS_Spouse_Location">
                                             <option selected="selected" value="">Select One</option>
                                             <option value="CORPORATE HEADQUATERS">Corporate Headquarters</option>
                                             <option value="BRYCE CANYON LODGE">Bryce Canyon Lodge</option>
@@ -615,271 +234,913 @@
                                             <option value="FURNACE CREEK INN AND RANCH">Furnace Creek Inn and Ranch</option>
                                             <option value="GENEVA MARINA">Geneva Marina</option>
                                             <option value="GIDEON PUTNAM">Gideon Putnam</option>
-                                            <option value="GRAND CANYON NATIONAL PARK - NORTH RIM">Grand Canyon National Park - North Rim</option>
-                                            <option value="GRAND CANYON NATIONAL PARK - SOUTH RIM">Grand Canyon National Park - South Rim</option>
+                                            <option value="GRAND CANYON NATIONAL PARK - NORTH RIM">Grand Canyon National Park -
+                                                North Rim
+                                            </option>
+                                            <option value="GRAND CANYON NATIONAL PARK - SOUTH RIM">Grand Canyon National Park -
+                                                South Rim
+                                            </option>
                                             <option value="HUESTON WOODS">Hueston Woods</option>
                                             <option value="MAUMEE BAY STATE PARK">Maumee Bay State Park</option>
-                                            <option value="MOHICAN BAY STATE PARK RESORT AND CONFERENCE CENTER">Mohican State Park Resort and Conference Center</option>
+                                            <option value="MOHICAN BAY STATE PARK RESORT AND CONFERENCE CENTER">Mohican State
+                                                Park Resort and Conference Center
+                                            </option>
                                             <option value="MOUNT RUSHMORE">Mount Rushmore</option>
                                             <option value="PAINTED DESERT OASIS">Painted Desert Oasis</option>
                                             <option value="PUNDERSON MANOR">Punderson Manor</option>
-                                            <option value="SALT FORK RESORT AND STATE PARK">Salt Fork Resort and State Park</option>
+                                            <option value="SALT FORK RESORT AND STATE PARK">Salt Fork Resort and State Park
+                                            </option>
                                             <option value="SCOTTYS CASTLE">Scotty's Castle</option>
                                             <option value="SHAWNEE STATE PARK">Shawnee State Park</option>
-                                            <option value="SILVERADO COUNTRY CLUB AND RESORT">Silverado Country Club and Resort</option>
+                                            <option value="SILVERADO COUNTRY CLUB AND RESORT">Silverado Country Club and
+                                                Resort
+                                            </option>
+                                            <option value="STOVEPIPE WELLS">Stovepipe Wells</option>
+                                            <option value="YELLOWSTONE NATIONAL PARK">Yellowstone National Park</option>
+                                            <option value="ZION NATIONAL PARK">Zion National Park</option>
+                                        </select>
+
+                                    </div>
+
+                                    <p>Are you applying with a friend or spouse?</p>
+
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input Friend_Applying_Details_Name" type="radio" name="Friend_Applying_Details_Name" id="Friend_Applying_Details_NameY" value="Y" required>
+                                        <label class="form-check-label" for="Friend_Applying_Details_NameY">Yes</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input Friend_Applying_Details_Name" type="radio" name="Friend_Applying_Details_Name" id="Friend_Applying_Details_NameN" value="N" required>
+                                        <label class="form-check-label" for="Friend_Applying_Details_NameN">No</label>
+                                    </div>
+                                    <div class="collapse" id="Friend_Applying_Details_Name-EXPAN">
+
+                                        <label for="NPS_Spouse_Location" class="form-label">Friend or Spouses name</label>
+                                        <input class="form-control" id="Friend_Applying_Name" name="Friend_Applying_Name"
+                                               maxlength="50" size="50" type="text">
+                                        <p> Do you want to work at the same location?</p>
+
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="Friend_Applying_Details_Location" id="Friend_Applying_Details_LocationY" value="Y">
+                                            <label class="form-check-label" for="Friend_Applying_Details_LocationY">Yes</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input " type="radio" name="Friend_Applying_Details_Location" id="Friend_Applying_Details_LocationN" value="N">
+                                            <label class="form-check-label" for="Friend_Applying_Details_LocationN">No</label>
+                                        </div>
+                                    </div>
+                                    <p> Do you require Housing</p>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input " type="radio" name="reqHousing" id="reqHousingY" value="Y">
+                                        <label class="form-check-label" for="reqHousingY">Yes</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input " type="radio" name="reqHousing" id="reqHousingN" value="N" required>
+                                        <label class="form-check-label" for="reqHousingN">No</label>
+                                    </div>
+                                    <div class="container">
+                                        <div class="row mt-3 ">
+                                            <ul class="nav nav-tabs  nav-fill flex-column flex-md-row text-light"
+                                                id="PositionTabs" role="tablist">
+                                                <li class="nav-item d-flex" role="presentation">
+                                                    <button class="nav-link active tab" id="Position01-tab"
+                                                            data-bs-toggle="tab" data-bs-target="#Position01-tab-pane"
+                                                            type="button" role="tab" aria-controls="Position01-tab-pane"
+                                                            aria-selected="true">First Position
+                                                    </button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link d-flex justify-content-center tab"
+                                                            id="Position02-tab" data-bs-toggle="tab"
+                                                            data-bs-target="#Position02-tab-pane" type="button"
+                                                            role="tab" aria-controls="Position02-tab-pane"
+                                                            aria-selected="false">Second Position (optional)
+                                                    </button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link d-flex justify-content-center tab"
+                                                            id="Position03-tab" data-bs-toggle="tab"
+                                                            data-bs-target="#Position03-tab-pane" type="button"
+                                                            role="tab" aria-controls="Position03-tab-pane"
+                                                            aria-selected="false">Third Position (optional)
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-content" id="PositionTabsContent">
+                                            <div class="tab-pane fade show active" id="Position01-tab-pane"
+                                                 role="tabpanel" aria-labelledby="Contact-tab" tabindex="0">
+                                                <div class="form-check">
+
+                                                    <label for="DesiredWorkingLocation01" class="form-label">
+                                                        Location</label>
+                                                    <select class="form-control" id="DesiredWorkingLocation01"
+                                                            name="DesiredWorkingLocation01" required>
+                                                        <option selected="selected" value="">Select One</option>
+                                                        <option value="CORPORATE HEADQUATERS">Corporate Headquarters
+                                                        </option>
+                                                        <option value="BRYCE CANYON LODGE">Bryce Canyon Lodge</option>
+                                                        <option value="BURR OAK STATE PARK">Burr Oak State Park</option>
+                                                        <option value="CRATER LAKE NATIONAL PARK">Crater Lake National
+                                                            Park
+                                                        </option>
+                                                        <option value="EVERGLADES NATIONAL PARK">Everglades National
+                                                            Park
+                                                        </option>
+                                                        <option value="FURNACE CREEK INN AND RANCH">Furnace Creek Inn
+                                                            and Ranch
+                                                        </option>
+                                                        <option value="GENEVA MARINA">Geneva Marina</option>
+                                                        <option value="GIDEON PUTNAM">Gideon Putnam</option>
+                                                        <option value="GRAND CANYON NATIONAL PARK - NORTH RIM">Grand
+                                                            Canyon National Park - North Rim
+                                                        </option>
+                                                        <option value="GRAND CANYON NATIONAL PARK - SOUTH RIM">Grand
+                                                            Canyon National Park - South Rim
+                                                        </option>
+                                                        <option value="HUESTON WOODS">Hueston Woods</option>
+                                                        <option value="MAUMEE BAY STATE PARK">Maumee Bay State Park
+                                                        </option>
+                                                        <option value="MOHICAN BAY STATE PARK RESORT AND CONFERENCE CENTER">
+                                                            Mohican State Park Resort and Conference Center
+                                                        </option>
+                                                        <option value="MOUNT RUSHMORE">Mount Rushmore</option>
+                                                        <option value="PAINTED DESERT OASIS">Painted Desert Oasis
+                                                        </option>
+                                                        <option value="PUNDERSON MANOR">Punderson Manor</option>
+                                                        <option value="SALT FORK RESORT AND STATE PARK">Salt Fork Resort
+                                                            and State Park
+                                                        </option>
+                                                        <option value="SCOTTYS CASTLE">Scotty's Castle</option>
+                                                        <option value="SHAWNEE STATE PARK">Shawnee State Park</option>
+                                                        <option value="SILVERADO COUNTRY CLUB AND RESORT">Silverado
+                                                            Country Club and Resort
+                                                        </option>
+                                                        <option value="STOVEPIPE WELLS">Stovepipe Wells</option>
+                                                        <option value="YELLOWSTONE NATIONAL PARK">Yellowstone National
+                                                            Park
+                                                        </option>
+                                                        <option value="ZION NATIONAL PARK">Zion National Park</option>
+                                                    </select>
+
+                                                    <label for="Position1" class="form-label">
+                                                        Position </label>
+                                                    <select class="form-control" id="Position1" size="1" required>
+                                                        <option selected="selected" value=""></option>
+                                                        <option>Dining Room Server Assistant</option>
+                                                        <option>Employee Dining Room Crew</option>
+                                                        <option>Fast Food Crew</option>
+                                                        <option>Kitchen Crew</option>
+                                                        <option>Laundry Crew</option>
+                                                        <option>Room Attendant</option>
+                                                        <option>Activities Sales Agent</option>
+                                                        <option>Administrative Assistant Maintenance</option>
+                                                        <option>Asst. HR Manager</option>
+                                                        <option>Audit Clerk</option>
+                                                        <option>Bartend attendant</option>
+                                                        <option>Driver</option>
+                                                        <option>Bus Service Person (D.L.)</option>
+                                                        <option>Cafeteria Management</option>
+                                                        <option>Camper Services Attendants</option>
+                                                        <option>Campground Attendant</option>
+                                                        <option>Campground Management</option>
+                                                        <option>Carpenter</option>
+                                                        <option>Distribution Center Associate</option>
+                                                        <option>Dock Help (D.L.)</option>
+                                                        <option>Custodian</option>
+                                                        <option>Electrician (D.L.)</option>
+                                                        <option>Finish Floor Supervisor</option>
+                                                        <option>Fire Systems Technician (D.L.)</option>
+                                                        <option>Food and Beverage Management</option>
+                                                        <option>Food and Beverage Office Assistant</option>
+                                                        <option>Front Office Management</option>
+                                                        <option>Furniture Mover (D.L.)</option>
+                                                        <option>General Accounting Office</option>
+                                                        <option>General Maintenance (D.L.)</option>
+                                                        <option>Guest Services Agent</option>
+                                                        <option>Heavy Equipment Operator (D.L.)</option>
+                                                        <option>Housekeeping Management</option>
+                                                        <option>Internship</option>
+                                                        <option>Locksmith (D.L.)</option>
+                                                        <option>Marina Fishing Guide (D.L.)</option>
+                                                        <option>Marina Manager (D.L.)</option>
+                                                        <option>Night Auditor</option>
+                                                        <option>Painter (D.L.)</option>
+                                                        <option>Pantry Supervisor</option>
+                                                        <option>Personnel Management</option>
+                                                        <option>Pianist</option>
+                                                        <option>Plumber (D.L.)</option>
+                                                        <option>Porter</option>
+                                                        <option>Preservation Maintenance Crew Craftsperson</option>
+                                                        <option>Recreation Coordinator (D.L.)</option>
+                                                        <option>Recreation Supervisor (D.L.)</option>
+                                                        <option>Recycling Technician (D.L.)</option>
+                                                        <option>Reservations Sales Agent</option>
+                                                        <option>Residence Coordinator</option>
+                                                        <option>Retail Management</option>
+                                                        <option>Retail Sales Associate</option>
+                                                        <option>Scenic Cruise Operator (D.L.)</option>
+                                                        <option>Seamstress</option>
+                                                        <option>Security Guard And Location Safety (D.L.)</option>
+                                                        <option>Snack Shop / Deli Supervisor</option>
+                                                        <option>Steward</option>
+                                                        <option>Storekeeper</option>
+                                                        <option>Tour Guide (D.L.)</option>
+                                                        <option>Traveling Night Auditor</option>
+                                                        <option>Vending Service Technician</option>
+                                                        <option>Warehouse Manager</option>
+                                                        <option>Warehouse Help</option>
+                                                    </select>
+                                                    <label for="Shift01" class="form-label">
+                                                        Shift </label>
+                                                    <select class="form-control" id="shift01" size="1" required>
+                                                        <option>Day shift</option>
+                                                        <option>Evening shift</option>
+                                                        <option>3rd shift</option>
+                                                    </select>
+
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="Position02-tab-pane" role="tabpanel"
+                                                 aria-labelledby="Position02-tab" tabindex="0">
+
+                                                <label for="DesiredWorkingLocation02" class="form-label">
+                                                    Location</label>
+                                                <select class="form-control" id="DesiredWorkingLocation02"
+                                                        name="DesiredWorkingLocation01">
+                                                    <option selected="selected" value="">Select One</option>
+                                                    <option value="CORPORATE HEADQUATERS">Corporate Headquarters
+                                                    </option>
+                                                    <option value="BRYCE CANYON LODGE">Bryce Canyon Lodge</option>
+                                                    <option value="BURR OAK STATE PARK">Burr Oak State Park</option>
+                                                    <option value="CRATER LAKE NATIONAL PARK">Crater Lake National
+                                                        Park
+                                                    </option>
+                                                    <option value="EVERGLADES NATIONAL PARK">Everglades National Park
+                                                    </option>
+                                                    <option value="FURNACE CREEK INN AND RANCH">Furnace Creek Inn and
+                                                        Ranch
+                                                    </option>
+                                                    <option value="GENEVA MARINA">Geneva Marina</option>
+                                                    <option value="GIDEON PUTNAM">Gideon Putnam</option>
+                                                    <option value="GRAND CANYON NATIONAL PARK - NORTH RIM">Grand Canyon
+                                                        National Park - North Rim
+                                                    </option>
+                                                    <option value="GRAND CANYON NATIONAL PARK - SOUTH RIM">Grand Canyon
+                                                        National Park - South Rim
+                                                    </option>
+                                                    <option value="HUESTON WOODS">Hueston Woods</option>
+                                                    <option value="MAUMEE BAY STATE PARK">Maumee Bay State Park</option>
+                                                    <option value="MOHICAN BAY STATE PARK RESORT AND CONFERENCE CENTER">
+                                                        Mohican State Park Resort and Conference Center
+                                                    </option>
+                                                    <option value="MOUNT RUSHMORE">Mount Rushmore</option>
+                                                    <option value="PAINTED DESERT OASIS">Painted Desert Oasis</option>
+                                                    <option value="PUNDERSON MANOR">Punderson Manor</option>
+                                                    <option value="SALT FORK RESORT AND STATE PARK">Salt Fork Resort and
+                                                        State Park
+                                                    </option>
+                                                    <option value="SCOTTYS CASTLE">Scotty's Castle</option>
+                                                    <option value="SHAWNEE STATE PARK">Shawnee State Park</option>
+                                                    <option value="SILVERADO COUNTRY CLUB AND RESORT">Silverado Country
+                                                        Club and Resort
+                                                    </option>
+                                                    <option value="STOVEPIPE WELLS">Stovepipe Wells</option>
+                                                    <option value="YELLOWSTONE NATIONAL PARK">Yellowstone National
+                                                        Park
+                                                    </option>
+                                                    <option value="ZION NATIONAL PARK">Zion National Park</option>
+                                                </select>
+
+                                                <label for="Position2" class="form-label">
+                                                    Position </label>
+                                                <select class="form-control" id="Position2" size="1">
+                                                    <option selected="selected" value=""></option>
+                                                    <option>Dining Room Server Assistant</option>
+                                                    <option>Employee Dining Room Crew</option>
+                                                    <option>Fast Food Crew</option>
+                                                    <option>Kitchen Crew</option>
+                                                    <option>Laundry Crew</option>
+                                                    <option>Room Attendant</option>
+                                                    <option>Activities Sales Agent</option>
+                                                    <option>Administrative Assistant Maintenance</option>
+                                                    <option>Asst. HR Manager</option>
+                                                    <option>Audit Clerk</option>
+                                                    <option>Bartend attendant</option>
+                                                    <option>Driver</option>
+                                                    <option>Bus Service Person (D.L.)</option>
+                                                    <option>Cafeteria Management</option>
+                                                    <option>Camper Services Attendants</option>
+                                                    <option>Campground Attendant</option>
+                                                    <option>Campground Management</option>
+                                                    <option>Carpenter</option>
+                                                    <option>Distribution Center Associate</option>
+                                                    <option>Dock Help (D.L.)</option>
+                                                    <option>Custodian</option>
+                                                    <option>Electrician (D.L.)</option>
+                                                    <option>Finish Floor Supervisor</option>
+                                                    <option>Fire Systems Technician (D.L.)</option>
+                                                    <option>Food and Beverage Management</option>
+                                                    <option>Food and Beverage Office Assistant</option>
+                                                    <option>Front Office Management</option>
+                                                    <option>Furniture Mover (D.L.)</option>
+                                                    <option>General Accounting Office</option>
+                                                    <option>General Maintenance (D.L.)</option>
+                                                    <option>Guest Services Agent</option>
+                                                    <option>Heavy Equipment Operator (D.L.)</option>
+                                                    <option>Housekeeping Management</option>
+                                                    <option>Internship</option>
+                                                    <option>Locksmith (D.L.)</option>
+                                                    <option>Marina Fishing Guide (D.L.)</option>
+                                                    <option>Marina Manager (D.L.)</option>
+                                                    <option>Night Auditor</option>
+                                                    <option>Painter (D.L.)</option>
+                                                    <option>Pantry Supervisor</option>
+                                                    <option>Personnel Management</option>
+                                                    <option>Pianist</option>
+                                                    <option>Plumber (D.L.)</option>
+                                                    <option>Porter</option>
+                                                    <option>Preservation Maintenance Crew Craftsperson</option>
+                                                    <option>Recreation Coordinator (D.L.)</option>
+                                                    <option>Recreation Supervisor (D.L.)</option>
+                                                    <option>Recycling Technician (D.L.)</option>
+                                                    <option>Reservations Sales Agent</option>
+                                                    <option>Residence Coordinator</option>
+                                                    <option>Retail Management</option>
+                                                    <option>Retail Sales Associate</option>
+                                                    <option>Scenic Cruise Operator (D.L.)</option>
+                                                    <option>Seamstress</option>
+                                                    <option>Security Guard And Location Safety (D.L.)</option>
+                                                    <option>Snack Shop / Deli Supervisor</option>
+                                                    <option>Steward</option>
+                                                    <option>Storekeeper</option>
+                                                    <option>Tour Guide (D.L.)</option>
+                                                    <option>Traveling Night Auditor</option>
+                                                    <option>Vending Service Technician</option>
+                                                    <option>Warehouse Manager</option>
+                                                    <option>Warehouse Help</option>
+                                                </select>
+                                                <label for="Shift02" class="form-label">
+                                                    Shift </label>
+                                                <select class="form-control" id="shift02" size="1">
+                                                    <option>Day shift</option>
+                                                    <option>Evening shift</option>
+                                                    <option>3rd shift</option>
+                                                </select>
+
+                                            </div>
+                                            <div class="tab-pane fade" id="Position03-tab-pane" role="tabpanel"
+                                                 aria-labelledby="Position03-tab" tabindex="0">
+                                                <label for="DesiredWorkingLocation03" class="form-label">
+                                                    Location</label>
+                                                <select class="form-control" id="DesiredWorkingLocation03"
+                                                        name="DesiredWorkingLocation01">
+                                                    <option selected="selected" value="">Select One</option>
+                                                    <option value="CORPORATE HEADQUATERS">Corporate Headquarters
+                                                    </option>
+                                                    <option value="BRYCE CANYON LODGE">Bryce Canyon Lodge</option>
+                                                    <option value="BURR OAK STATE PARK">Burr Oak State Park</option>
+                                                    <option value="CRATER LAKE NATIONAL PARK">Crater Lake National
+                                                        Park
+                                                    </option>
+                                                    <option value="EVERGLADES NATIONAL PARK">Everglades National Park
+                                                    </option>
+                                                    <option value="FURNACE CREEK INN AND RANCH">Furnace Creek Inn and
+                                                        Ranch
+                                                    </option>
+                                                    <option value="GENEVA MARINA">Geneva Marina</option>
+                                                    <option value="GIDEON PUTNAM">Gideon Putnam</option>
+                                                    <option value="GRAND CANYON NATIONAL PARK - NORTH RIM">Grand Canyon
+                                                        National Park - North Rim
+                                                    </option>
+                                                    <option value="GRAND CANYON NATIONAL PARK - SOUTH RIM">Grand Canyon
+                                                        National Park - South Rim
+                                                    </option>
+                                                    <option value="HUESTON WOODS">Hueston Woods</option>
+                                                    <option value="MAUMEE BAY STATE PARK">Maumee Bay State Park</option>
+                                                    <option value="MOHICAN BAY STATE PARK RESORT AND CONFERENCE CENTER">
+                                                        Mohican State Park Resort and Conference Center
+                                                    </option>
+                                                    <option value="MOUNT RUSHMORE">Mount Rushmore</option>
+                                                    <option value="PAINTED DESERT OASIS">Painted Desert Oasis</option>
+                                                    <option value="PUNDERSON MANOR">Punderson Manor</option>
+                                                    <option value="SALT FORK RESORT AND STATE PARK">Salt Fork Resort and
+                                                        State Park
+                                                    </option>
+                                                    <option value="SCOTTYS CASTLE">Scotty's Castle</option>
+                                                    <option value="SHAWNEE STATE PARK">Shawnee State Park</option>
+                                                    <option value="SILVERADO COUNTRY CLUB AND RESORT">Silverado Country
+                                                        Club and Resort
+                                                    </option>
+                                                    <option value="STOVEPIPE WELLS">Stovepipe Wells</option>
+                                                    <option value="YELLOWSTONE NATIONAL PARK">Yellowstone National
+                                                        Park
+                                                    </option>
+                                                    <option value="ZION NATIONAL PARK">Zion National Park</option>
+                                                </select>
+
+                                                <label for="Position3" class="form-label">
+                                                    Position </label>
+                                                <select class="form-control" id="Position3" size="1">
+                                                    <option selected="selected" value=""></option>
+                                                    <option>Dining Room Server Assistant</option>
+                                                    <option>Employee Dining Room Crew</option>
+                                                    <option>Fast Food Crew</option>
+                                                    <option>Kitchen Crew</option>
+                                                    <option>Laundry Crew</option>
+                                                    <option>Room Attendant</option>
+                                                    <option>Activities Sales Agent</option>
+                                                    <option>Administrative Assistant Maintenance</option>
+                                                    <option>Asst. HR Manager</option>
+                                                    <option>Audit Clerk</option>
+                                                    <option>Bartend attendant</option>
+                                                    <option>Driver</option>
+                                                    <option>Bus Service Person (D.L.)</option>
+                                                    <option>Cafeteria Management</option>
+                                                    <option>Camper Services Attendants</option>
+                                                    <option>Campground Attendant</option>
+                                                    <option>Campground Management</option>
+                                                    <option>Carpenter</option>
+                                                    <option>Distribution Center Associate</option>
+                                                    <option>Dock Help (D.L.)</option>
+                                                    <option>Custodian</option>
+                                                    <option>Electrician (D.L.)</option>
+                                                    <option>Finish Floor Supervisor</option>
+                                                    <option>Fire Systems Technician (D.L.)</option>
+                                                    <option>Food and Beverage Management</option>
+                                                    <option>Food and Beverage Office Assistant</option>
+                                                    <option>Front Office Management</option>
+                                                    <option>Furniture Mover (D.L.)</option>
+                                                    <option>General Accounting Office</option>
+                                                    <option>General Maintenance (D.L.)</option>
+                                                    <option>Guest Services Agent</option>
+                                                    <option>Heavy Equipment Operator (D.L.)</option>
+                                                    <option>Housekeeping Management</option>
+                                                    <option>Internship</option>
+                                                    <option>Locksmith (D.L.)</option>
+                                                    <option>Marina Fishing Guide (D.L.)</option>
+                                                    <option>Marina Manager (D.L.)</option>
+                                                    <option>Night Auditor</option>
+                                                    <option>Painter (D.L.)</option>
+                                                    <option>Pantry Supervisor</option>
+                                                    <option>Personnel Management</option>
+                                                    <option>Pianist</option>
+                                                    <option>Plumber (D.L.)</option>
+                                                    <option>Porter</option>
+                                                    <option>Preservation Maintenance Crew Craftsperson</option>
+                                                    <option>Recreation Coordinator (D.L.)</option>
+                                                    <option>Recreation Supervisor (D.L.)</option>
+                                                    <option>Recycling Technician (D.L.)</option>
+                                                    <option>Reservations Sales Agent</option>
+                                                    <option>Residence Coordinator</option>
+                                                    <option>Retail Management</option>
+                                                    <option>Retail Sales Associate</option>
+                                                    <option>Scenic Cruise Operator (D.L.)</option>
+                                                    <option>Seamstress</option>
+                                                    <option>Security Guard And Location Safety (D.L.)</option>
+                                                    <option>Snack Shop / Deli Supervisor</option>
+                                                    <option>Steward</option>
+                                                    <option>Storekeeper</option>
+                                                    <option>Tour Guide (D.L.)</option>
+                                                    <option>Traveling Night Auditor</option>
+                                                    <option>Vending Service Technician</option>
+                                                    <option>Warehouse Manager</option>
+                                                    <option>Warehouse Help</option>
+                                                </select>
+                                                <label for="Shift03" class="form-label">
+                                                    Shift </label>
+                                                <select class="form-control" id="shift03" size="1">
+                                                    <option>Day shift</option>
+                                                    <option>Evening shift</option>
+                                                    <option>3rd shift</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mt-2 ms-4">
+                                        <button class="btn btn-primary nextsec" type="button">Continue</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-WrkExp" role="tabpanel" aria-labelledby="v-pills-WrkExp-tab" tabindex="0">
+
+                        <h4>Please fill in your most relevant job history</h4>
+                        <!-- check and expendables -->
+                        <div class="container checks">
+
+                            <p> Have you ever worked for Xanterra Parks and Resorts, Amfac Park and Resorts, Fred Harvey
+                                or TWRS company?</p>
+
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input APL-PREV-EMPLOY" type="radio" name="APL-PREV-EMPLOY" id="APL-PREV-EMPLOYY" value="Y" required>
+                                <label class="form-check-label" for="APL-PREV-EMPLOYY">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input APL-PREV-EMPLOY" type="radio" name="APL-PREV-EMPLOY" id="APL-PREV-EMPLOYN" value="N" required>
+                                <label class="form-check-label" for="APL-PREV-EMPLOYN">No</label>
+                            </div>
+
+                            <div class="collapse" id="PREV-EMPLOY-EXPAN">
+
+                                    <label for="APL-PREV-EMP-NBR" class="form-label"> Please enter your employee
+                                        number:</label>
+                                    <input class="form-control" id="APL-PREV-EMP-NBR" name="APL-PREV-EMP-NBR" size="10"
+                                           maxlength="15" type="text">
+
+                                    <label for="APL-PREV-LOC-WORK" class="form-label"> select last location
+                                        worked:</label>
+                                    <select class="form-control" id="APL-PREV-LOC-WORK" name="APL-PREV-LOC-WORK">
+                                        <option selected="selected" value="">Select One</option>
+                                        <option value="CORPORATE HEADQUATERS">Corporate Headquarters</option>
+                                        <option value="BRYCE CANYON LODGE">Bryce Canyon Lodge</option>
+                                        <option value="BURR OAK STATE PARK">Burr Oak State Park</option>
+                                        <option value="CRATER LAKE NATIONAL PARK">Crater Lake National Park</option>
+                                        <option value="EVERGLADES NATIONAL PARK">Everglades National Park</option>
+                                        <option value="FURNACE CREEK INN AND RANCH">Furnace Creek Inn and Ranch</option>
+                                        <option value="GENEVA MARINA">Geneva Marina</option>
+                                        <option value="GIDEON PUTNAM">Gideon Putnam</option>
+                                        <option value="GRAND CANYON NATIONAL PARK - NORTH RIM">Grand Canyon National
+                                            Park - North Rim
+                                        </option>
+                                        <option value="GRAND CANYON NATIONAL PARK - SOUTH RIM">Grand Canyon National
+                                            Park - South Rim
+                                        </option>
+                                        <option value="HUESTON WOODS">Hueston Woods</option>
+                                        <option value="MAUMEE BAY STATE PARK">Maumee Bay State Park</option>
+                                        <option value="MOHICAN BAY STATE PARK RESORT AND CONFERENCE CENTER">Mohican
+                                            State Park Resort and Conference Center
+                                        </option>
+                                        <option value="MOUNT RUSHMORE">Mount Rushmore</option>
+                                        <option value="PAINTED DESERT OASIS">Painted Desert Oasis</option>
+                                        <option value="PUNDERSON MANOR">Punderson Manor</option>
+                                        <option value="SALT FORK RESORT AND STATE PARK">Salt Fork Resort and State
+                                            Park
+                                        </option>
+                                        <option value="SCOTTYS CASTLE">Scotty's Castle</option>
+                                        <option value="SHAWNEE STATE PARK">Shawnee State Park</option>
+                                        <option value="SILVERADO COUNTRY CLUB AND RESORT">Silverado Country Club and
+                                            Resort
+                                        </option>
+                                        <option value="STOVEPIPE WELLS">Stovepipe Wells</option>
+                                        <option value="YELLOWSTONE NATIONAL PARK">Yellowstone National Park</option>
+                                        <option value="ZION NATIONAL PARK">Zion National Park</option>
+                                    </select>
+
+                                    <label for="sd6" class="form-label">Enter the date started: (mm/dd/yyyy) </label>
+                                    <input class="form-control" id="sd6" name="APL-PREV-BEG-DATE" size="12"
+                                           maxlength="10" type="date">
+
+                                    <label for="ed6" class="form-label">and the date ended: (mm/dd/yyyy)</label>
+                                    <input class="form-control" id="ed6" name="APL-PREV-END-DATE" size="12"
+                                           maxlength="10" type="date">
+
+                                    <p> Have you ever been employed under a different name with any Xanterra Parks and
+                                        Resorts, Amfac Parks and Resorts,
+                                        Fred Harvey or TWRS company? </p>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input Employed_Different_Name" type="radio" name="Employed_Different_Name" id="Employed_Different_NameY" value="Y">
+                                    <label class="form-check-label" for="Employed_Different_NameY">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input Employed_Different_Name" type="radio" name="Employed_Different_Name" id="Employed_Different_NameN" value="N">
+                                    <label class="form-check-label" for="Employed_Different_NameN">No</label>
+                                </div>
+
+                                    <div class="collapse" id="Employed_Different_Name-EXPAN">
+                                        <label for="APL-FORMER-LST-NM" class="form-label"> indicate the name(s)</label>
+                                        <input class="form-control" id="APL-FORMER-LST-NM" name="APL-FORMER-LST-NM"
+                                               maxlength="30" size="30" type="text">
+                                        <label for="Different_Name_Location" class="form-label">Location</label>
+                                        <select class="form-control" id="Different_Name_Location"
+                                                name="Different_Name_Location">
+                                            <option selected="selected" value="">Select One</option>
+                                            <option value="CORPORATE HEADQUATERS">Corporate Headquarters</option>
+                                            <option value="BRYCE CANYON LODGE">Bryce Canyon Lodge</option>
+                                            <option value="BURR OAK STATE PARK">Burr Oak State Park</option>
+                                            <option value="CRATER LAKE NATIONAL PARK">Crater Lake National Park</option>
+                                            <option value="EVERGLADES NATIONAL PARK">Everglades National Park</option>
+                                            <option value="FURNACE CREEK INN AND RANCH">Furnace Creek Inn and Ranch
+                                            </option>
+                                            <option value="GENEVA MARINA">Geneva Marina</option>
+                                            <option value="GIDEON PUTNAM">Gideon Putnam</option>
+                                            <option value="GRAND CANYON NATIONAL PARK - NORTH RIM">Grand Canyon National
+                                                Park - North Rim
+                                            </option>
+                                            <option value="GRAND CANYON NATIONAL PARK - SOUTH RIM">Grand Canyon National
+                                                Park - South Rim
+                                            </option>
+                                            <option value="HUESTON WOODS">Hueston Woods</option>
+                                            <option value="MAUMEE BAY STATE PARK">Maumee Bay State Park</option>
+                                            <option value="MOHICAN BAY STATE PARK RESORT AND CONFERENCE CENTER">Mohican
+                                                State Park Resort and Conference Center
+                                            </option>
+                                            <option value="MOUNT RUSHMORE">Mount Rushmore</option>
+                                            <option value="PAINTED DESERT OASIS">Painted Desert Oasis</option>
+                                            <option value="PUNDERSON MANOR">Punderson Manor</option>
+                                            <option value="SALT FORK RESORT AND STATE PARK">Salt Fork Resort and State
+                                                Park
+                                            </option>
+                                            <option value="SCOTTYS CASTLE">Scotty's Castle</option>
+                                            <option value="SHAWNEE STATE PARK">Shawnee State Park</option>
+                                            <option value="SILVERADO COUNTRY CLUB AND RESORT">Silverado Country Club and
+                                                Resort
+                                            </option>
                                             <option value="STOVEPIPE WELLS">Stovepipe Wells</option>
                                             <option value="YELLOWSTONE NATIONAL PARK">Yellowstone National Park</option>
                                             <option value="ZION NATIONAL PARK">Zion National Park</option>
                                         </select>
                                     </div>
-                                </form>
                             </div>
 
-                            <p> Are you a spouse, dependent, relative, or Domestic Partner of a National Park Service employee?</p>
-                            Yes
-                            <input class="Spouse_NPS_Employee" name="Spouse_NPS_Employee" value="Y" type="radio">
-                            No
-                            <input  class="Spouse_NPS_Employee" name="Spouse_NPS_Employee" value="N" type="radio">
-
-                            <div class="collapse" id="Spouse_NPS_Employee-EXPAN">
-                                <label for="NPS_Spouse_Name" class="form-label">  indicate the name(s)</label>
-                                <input class="form-control" id="NPS_Spouse_Name" name="NPS_Spouse_Name" maxlength="50" size="50" type="text">
-                                <label for="NPS_Spouse_Location" class="form-label"> location(s) of the NPS employee.</label>
-
-                                <select class="form-control" id="NPS_Spouse_Location" name="NPS_Spouse_Location">
-                                    <option selected="selected" value="">Select One</option>
-                                    <option value="CORPORATE HEADQUATERS">Corporate Headquarters</option>
-                                    <option value="BRYCE CANYON LODGE">Bryce Canyon Lodge</option>
-                                    <option value="BURR OAK STATE PARK">Burr Oak State Park</option>
-                                    <option value="CRATER LAKE NATIONAL PARK">Crater Lake National Park</option>
-                                    <option value="EVERGLADES NATIONAL PARK">Everglades National Park</option>
-                                    <option value="FURNACE CREEK INN AND RANCH">Furnace Creek Inn and Ranch</option>
-                                    <option value="GENEVA MARINA">Geneva Marina</option>
-                                    <option value="GIDEON PUTNAM">Gideon Putnam</option>
-                                    <option value="GRAND CANYON NATIONAL PARK - NORTH RIM">Grand Canyon National Park - North Rim</option>
-                                    <option value="GRAND CANYON NATIONAL PARK - SOUTH RIM">Grand Canyon National Park - South Rim</option>
-                                    <option value="HUESTON WOODS">Hueston Woods</option>
-                                    <option value="MAUMEE BAY STATE PARK">Maumee Bay State Park</option>
-                                    <option value="MOHICAN BAY STATE PARK RESORT AND CONFERENCE CENTER">Mohican State Park Resort and Conference Center</option>
-                                    <option value="MOUNT RUSHMORE">Mount Rushmore</option>
-                                    <option value="PAINTED DESERT OASIS">Painted Desert Oasis</option>
-                                    <option value="PUNDERSON MANOR">Punderson Manor</option>
-                                    <option value="SALT FORK RESORT AND STATE PARK">Salt Fork Resort and State Park</option>
-                                    <option value="SCOTTYS CASTLE">Scotty's Castle</option>
-                                    <option value="SHAWNEE STATE PARK">Shawnee State Park</option>
-                                    <option value="SILVERADO COUNTRY CLUB AND RESORT">Silverado Country Club and Resort</option>
-                                    <option value="STOVEPIPE WELLS">Stovepipe Wells</option>
-                                    <option value="YELLOWSTONE NATIONAL PARK">Yellowstone National Park</option>
-                                    <option value="ZION NATIONAL PARK">Zion National Park</option>
-                                </select>
-
-                            </div>
-
-                            <p>Are you applying with a friend or spouse?</p>
-                            Yes
-                            <input class="Friend_Applying_Details_Name" name="Friend_Applying_Details_Name" value="Y" type="radio">
-                            No
-                            <input  class="Friend_Applying_Details_Name" name="Friend_Applying_Details_Name" value="N" type="radio">
-
-                            <div class="collapse" id="Friend_Applying_Details_Name-EXPAN">
-
-                                <label for="NPS_Spouse_Location" class="form-label">Friend or Spouses name</label>
-                                <input class="form-control" id="Friend_Applying_Name" name="Friend_Applying_Name" maxlength="50" size="50" type="text">
-
-                            </div>
-                            <p> Would you require housing</p>
-                            Yes
-                            <input value="work same location" name="Friend_Applying_Details_Location" type="radio">
-                            No
-                            <input value="" name="Friend_Applying_Details_Location" type="radio">
-                            <div class="collapse" id="Friend_Applying_Details_Location-EXPAN">
-                                test
-                            </div>
-                        </div>
-                        <div class="p-3" >
+                        <div class="p-3">
                             <div class="container p-3">
-                                <h4>Select your desired position(s) </h4>
+                                <h4>Most recent relevant job experience</h4>
                                 <div class="container">
                                     <div class="row mt-3 ">
-                                        <ul class="nav nav-tabs  nav-fill flex-column flex-md-row text-light"  id="WrkExpTab" role="tablist">
+                                        <ul class="nav nav-tabs  nav-fill flex-column flex-md-row text-light"
+                                            id="WrkExpTab" role="tablist">
                                             <li class="nav-item d-flex" role="presentation">
-                                                <button class="nav-link active tab" id="WrkHis01-tab" data-bs-toggle="tab" data-bs-target="#WrkHis01-tab-pane" type="button" role="tab" aria-controls="WrkHis01-tab-pane" aria-selected="true">Most recent job</button>
-                                            </li>
-                                            <li class="nav-item"  role="presentation">
-                                                <button class="nav-link d-flex justify-content-center tab" id="WrkHis02-tab" data-bs-toggle="tab" data-bs-target="#WrkHis02-tab-pane" type="button" role="tab" aria-controls="WrkHis02-tab-pane" aria-selected="false">Second Most recent(optional)</button>
+                                                <button class="nav-link active tab" id="WrkHis01-tab"
+                                                        data-bs-toggle="tab" data-bs-target="#WrkHis01-tab-pane"
+                                                        type="button" role="tab" aria-controls="WrkHis01-tab-pane"
+                                                        aria-selected="true">Most recent job
+                                                </button>
                                             </li>
                                             <li class="nav-item" role="presentation">
-                                                <button class="nav-link d-flex justify-content-center tab" id="WrkHis03-tab" data-bs-toggle="tab" data-bs-target="#WrkHis03-tab-pane" type="button" role="tab" aria-controls="WrkHis03-tab-pane" aria-selected="false">Third Most recent job(optional)</button>
+                                                <button class="nav-link d-flex justify-content-center tab"
+                                                        id="WrkHis02-tab" data-bs-toggle="tab"
+                                                        data-bs-target="#WrkHis02-tab-pane" type="button" role="tab"
+                                                        aria-controls="WrkHis02-tab-pane" aria-selected="false">Second
+                                                    Most recent(optional)
+                                                </button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link d-flex justify-content-center tab"
+                                                        id="WrkHis03-tab" data-bs-toggle="tab"
+                                                        data-bs-target="#WrkHis03-tab-pane" type="button" role="tab"
+                                                        aria-controls="WrkHis03-tab-pane" aria-selected="false">Third
+                                                    Most recent job (optional)
+                                                </button>
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="tab-content" id="WrkExpTabContent">
-                                        <div class="tab-pane fade show active" id="WrkHis01-tab-pane" role="tabpanel" aria-labelledby="Contact-tab" tabindex="0">
-                                            <div class="card mb-3">
-                                                <div class="row g-0">
-                                                    <div class="col-md-4">
-                                                        <img src="css/anthony-j-natalizio-center-b.jpg" class="w-100"/>
-                                                    </div>
-                                                    <div class="col-md-8">
-                                                        <div class="card-body">
-                                                            <h5 class="card-title">Anthony J. Natalizio Center (AJN)</h5>
-                                                            <p class="card-text">The newly renovated AJN Center boasts 17,665 square feet that can be divided and arranged for a variety of event styles.</p>
-                                                            <p class="card-text">Capacity: 1,376 (theater seating), 608 (banquet seating), 225 (classroom seating)</p>
-                                                            <div class="justify-content-end">
-                                                                <button class="btn btn-warning"> view availability</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                        <div class="tab-pane fade show active" id="WrkHis01-tab-pane" role="tabpanel" aria-labelledby="WrkHis01-tab" tabindex="0">
+                                            <div class="container">
+                                                <div class="mb-3">
+                                                    <label for="PreviousEmployer01" class="form-label">Previous
+                                                        employer</label>
+                                                    <input type="text" class="form-control" id="PreviousEmployer01" required>
                                                 </div>
-                                            </div>
-
-                                        </div>
-                                        <div class="tab-pane fade" id="WrkHis02-tab-pane" role="tabpanel" aria-labelledby="WrkHis02-tab" tabindex="0">
-
-                                            <div class="card mb-3">
-                                                <div class="row g-0">
-                                                    <div class="col-md-4">
-                                                        <img src="../Javascript2BootstrapLangdingPage2/css/richard-t-anderson-center-b.jpg" class="w-100"/>
-                                                    </div>
-                                                    <div class="col-md-8">
-                                                        <div class="card-body">
-                                                            <h5 class="card-title">Richard T. Anderson (RTA) Education Center</h5>
-                                                            <p class="card-text">The RTA Center’s 4,500 square feet can be divided and arranged for a variety of event styles, plus two classroom-sized breakout rooms are available just across the hall for additional space.</p>
-                                                            <p class="card-text">Capacity: 420 (theater seating), 240 (banquet seating), 160 (classroom seating)</p>
-                                                            <div class="justify-content-end">
-                                                                <button class="btn btn-warning"> view availability</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                <div class="mb-3">
+                                                    <label for="PreviousWrkLocation01"
+                                                           class="form-label">Address</label>
+                                                    <input type="text" class="form-control" id="PreviousWrkLocation01"required>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="PreviousStartDate01" class="form-label">Start
+                                                        Date</label>
+                                                    <input type="date" class="form-control" id="PreviousStartDate01" required>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="PreviousEndDate01" class="form-label">End Date </label>
+                                                    <input type="date" class="form-control" id="PreviousEndDate01" required>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="PreviousWrkDescription01" class="form-label">Responsibilities</label>
+                                                    <textarea class="form-control" id="PreviousWrkDescription01" rows="3" required></textarea>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="tab-pane fade" id="WrkHis03-tab-pane" role="tabpanel" aria-labelledby="WrkHis03-tab" tabindex="0">
-
-                                            <div class="card mb-3">
-                                                <div class="row g-0">
-                                                    <div class="col-md-4">
-                                                        <img src="css/building-q-b (1).jpg" class="w-100"/>
-
+                                            <div class="tab-pane fade" id="WrkHis02-tab-pane" role="tabpanel"
+                                                 aria-labelledby="WrkHis02-tab" tabindex="0">
+                                                <div class="container">
+                                                    <div class="mb-3">
+                                                        <label for="PreviousEmployer02" class="form-label">Previous
+                                                            employer</label>
+                                                        <input type="text" class="form-control" id="PreviousEmployer02">
                                                     </div>
-                                                    <div class="col-md-8">
-                                                        <div class="card-body">
-                                                            <h5 class="card-title">Building Q</h5>
-                                                            <p class="card-text">Training rooms with different sizes and configurations are available for customized corporate training, seminars and special events.</p>
-                                                            <p class="card-text">Capacity: 30 per room (three rooms available)</p>
-                                                            <div class="justify-content-end">
-                                                                <button class="btn btn-warning"> view availability</button>
-                                                            </div>
-                                                        </div>
+                                                    <div class="mb-3">
+                                                        <label for="PreviousWrkLocation02"
+                                                               class="form-label">Address</label>
+                                                        <input type="text" class="form-control"
+                                                               id="PreviousWrkLocation02">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="PreviousStartDate02" class="form-label">Start
+                                                            Date</label>
+                                                        <input type="date" class="form-control"
+                                                               id="PreviousStartDate02">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="PreviousEndDate02" class="form-label">End
+                                                            Date </label>
+                                                        <input type="date" class="form-control" id="PreviousEndDate02">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="PreviousWrkDescription02" class="form-label">Responsibilities</label>
+                                                        <textarea class="form-control" id="PreviousWrkDescription02" rows="3"></textarea>
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="tab-pane fade" id="WrkHis03-tab-pane" role="tabpanel" aria-labelledby="WrkHis03-tab" tabindex="0">
+                                                <div class="container">
+                                                    <div class="mb-3">
+                                                        <label for="PreviousEmployer03" class="form-label">Previous
+                                                            employer</label>
+                                                        <input type="text" class="form-control" id="PreviousEmployer03">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="PreviousWrkLocation03"
+                                                               class="form-label">Address</label>
+                                                        <input type="text" class="form-control"
+                                                               id="PreviousWrkLocation03">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="PreviousStartDate03" class="form-label">Start
+                                                            Date</label>
+                                                        <input type="date" class="form-control"
+                                                               id="PreviousStartDate03">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="PreviousEndDate03" class="form-label">End
+                                                            Date </label>
+                                                        <input type="date" class="form-control" id="PreviousEndDate03">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="PreviousWrkDescription03" class="form-label">Responsibilities</label>
+                                                        <textarea class="form-control" id="PreviousWrkDescription03" rows="3"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                         </div>
                                     </div>
+                                <div class="mt-2 ms-4">
+                                    <button class="btn btn-primary nextsec" type="button">Continue</button>
+                                </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="v-pills-Education" role="tabpanel" aria-labelledby="v-pills-Education-tab" tabindex="0">
 
-                        <div class="p-3" >
+                            <div class="p-3">
 
-                            <div class="container p-3">
-                                <h4>Select your desired position(s) </h4>
-                                <div class="container">
-                                    <div class="row mt-3 ">
-                                        <ul class="nav nav-tabs  nav-fill flex-column flex-md-row text-light"  id="EduTab" role="tablist">
-                                            <li class="nav-item d-flex" role="presentation">
-                                                <button class="nav-link active tab" id="Edu01-Tab" data-bs-toggle="tab" data-bs-target="#Edu01-Tab-pane" type="button" role="tab" aria-controls="Edu01-Tab-pane" aria-selected="true">First Position</button>
-                                            </li>
-                                            <li class="nav-item"  role="presentation">
-                                                <button class="nav-link d-flex justify-content-center tab" id="Edu02-Tab" data-bs-toggle="tab" data-bs-target="#Edu02-Tab-pane" type="button" role="tab" aria-controls="Edu02-Tab-pane" aria-selected="false">Second Position (optional)</button>
-                                            </li>
-                                            <li class="nav-item" role="presentation">
-                                                <button class="nav-link d-flex justify-content-center tab" id="Edu03-Tab" data-bs-toggle="tab" data-bs-target="#Edu03-Tab-pane" type="button" role="tab" aria-controls="Edu03-Tab-pane" aria-selected="false">Third Position (optional)</button>
-                                            </li>
+                                <div class="container p-3">
+                                    <h4>Please fill in your education history </h4>
+                                    <div class="container">
+                                        <div class="row mt-3 ">
+                                            <ul class="nav nav-tabs  nav-fill flex-column flex-md-row text-light"
+                                                id="EduTab" role="tablist">
+                                                <li class="nav-item d-flex" role="presentation">
+                                                    <button class="nav-link active tab" id="Edu01-Tab"
+                                                            data-bs-toggle="tab" data-bs-target="#Edu01-Tab-pane"
+                                                            type="button" role="tab" aria-controls="Edu01-Tab-pane"
+                                                            aria-selected="true">First Position
+                                                    </button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link d-flex justify-content-center tab"
+                                                            id="Edu02-Tab" data-bs-toggle="tab"
+                                                            data-bs-target="#Edu02-Tab-pane" type="button" role="tab"
+                                                            aria-controls="Edu02-Tab-pane" aria-selected="false">Second
+                                                        Position (optional)
+                                                    </button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link d-flex justify-content-center tab"
+                                                            id="Edu03-Tab" data-bs-toggle="tab"
+                                                            data-bs-target="#Edu03-Tab-pane" type="button" role="tab"
+                                                            aria-controls="Edu03-Tab-pane" aria-selected="false">Third
+                                                        Position (optional)
+                                                    </button>
+                                                </li>
 
-                                        </ul>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-content" id="EduTabContent">
+                                            <div class="tab-pane fade show active" id="Edu01-Tab-pane" role="tabpanel"
+                                                 aria-labelledby="Contact-tab" tabindex="0">
+
+                                                <div class="mb-3">
+                                                    <label for="SchoolName01"
+                                                           class="form-label">School Name</label>
+                                                    <input type="text" class="form-control"
+                                                           id="SchoolName01" required>
+                                                </div>
+
+                                                <label for="LevelOfEdu01" class="form-label"> Education level
+                                                     </label>
+                                                <select class="form-control" id="LevelOfEdu01" size="1" required>
+                                                    <option>High school diploma</option>
+                                                    <option>Associates degree</option>
+                                                    <option>Bachelors degree</option>
+                                                    <option>Masters degree</option>
+                                                </select>
+
+                                                <div class="col-md-6">
+                                                    <label for="DateRec01" class="form-label">Date received </label>
+                                                    <!-- fill in with js-->
+                                                    <input type="date" class="form-control" id="DateRec01" required>
+
+
+                                                </div>
+
+                                            </div>
+                                            <div class="tab-pane fade" id="Edu02-Tab-pane" role="tabpanel"
+                                                 aria-labelledby="Edu02-Tab" tabindex="0">
+                                                <div class="mb-3">
+                                                    <label for="SchoolName02"
+                                                           class="form-label">School Name</label>
+                                                    <input type="text" class="form-control"
+                                                           id="SchoolName02">
+                                                </div>
+
+                                                <label for="LevelOfEdu02" class="form-label"> Education level
+                                                </label>
+                                                <select class="form-control" id="LevelOfEdu02" size="1">
+                                                    <option>High school diploma</option>
+                                                    <option>Associates degree</option>
+                                                    <option>Bachelors degree</option>
+                                                    <option>Masters degree</option>
+                                                </select>
+
+                                                <div class="col-md-6">
+                                                    <label for="DateRec02" class="form-label">Date received </label>
+                                                    <!-- fill in with js-->
+                                                    <input type="date" class="form-control" id="DateRec02" required>
+                                                    <div class="valid-feedback">
+                                                        Looks good!
+                                                    </div>
+                                                    <div class="invalid-feedback">
+                                                        Last Name is required.
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                            <div class="tab-pane fade" id="Edu03-Tab-pane" role="tabpanel" aria-labelledby="Edu03-Tab" tabindex="0">
+                                                <div class="mb-3">
+                                                <label for="SchoolName03"
+                                                       class="form-label">School Name</label>
+                                                <input type="text" class="form-control"
+                                                       id="SchoolName03">
+                                            </div>
+
+                                            <label for="LevelOfEdu03" class="form-label"> Education level
+                                            </label>
+                                            <select class="form-control" id="LevelOfEdu03" size="1">
+                                                <option>High school diploma</option>
+                                                <option>Associates degree</option>
+                                                <option>Bachelors degree</option>
+                                                <option>Masters degree</option>
+                                            </select>
+
+                                            <div class="col-md-6">
+                                                <label for="DateRec03" class="form-label">Date received </label>
+                                                <!-- fill in with js-->
+                                                <input type="date" class="form-control" id="DateRec03" required>
+                                                <div class="valid-feedback">
+                                                    Looks good!
+                                                </div>
+                                                <div class="invalid-feedback">
+                                                    Last Name is required.
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="tab-content" id="EduTabContent">
-                                        <div class="tab-pane fade show active" id="Edu01-Tab-pane" role="tabpanel" aria-labelledby="Contact-tab" tabindex="0">
-
-
-                                            <div class="card mb-3">
-                                                <div class="row g-0">
-                                                    <div class="col-md-4">
-                                                        <img src="css/anthony-j-natalizio-center-b.jpg" class="w-100"/>
-                                                    </div>
-                                                    <div class="col-md-8">
-                                                        <div class="card-body">
-                                                            <h5 class="card-title">Anthony J. Natalizio Center (AJN)</h5>
-                                                            <p class="card-text">The newly renovated AJN Center boasts 17,665 square feet that can be divided and arranged for a variety of event styles.</p>
-                                                            <p class="card-text">Capacity: 1,376 (theater seating), 608 (banquet seating), 225 (classroom seating)</p>
-                                                            <div class="justify-content-end">
-                                                                <button class="btn btn-warning"> view availability</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <div class="tab-pane fade" id="Edu02-Tab-pane" role="tabpanel" aria-labelledby="Edu02-Tab" tabindex="0">
-
-                                            <div class="card mb-3">
-                                                <div class="row g-0">
-                                                    <div class="col-md-4">
-                                                        <img src="../Javascript2BootstrapLangdingPage2/css/richard-t-anderson-center-b.jpg" class="w-100"/>
-                                                    </div>
-                                                    <div class="col-md-8">
-                                                        <div class="card-body">
-                                                            <h5 class="card-title">Richard T. Anderson (RTA) Education Center</h5>
-                                                            <p class="card-text">The RTA Center’s 4,500 square feet can be divided and arranged for a variety of event styles, plus two classroom-sized breakout rooms are available just across the hall for additional space.</p>
-                                                            <p class="card-text">Capacity: 420 (theater seating), 240 (banquet seating), 160 (classroom seating)</p>
-                                                            <div class="justify-content-end">
-                                                                <button class="btn btn-warning"> view availability</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane fade" id="Edu03-Tab-pane" role="tabpanel" aria-labelledby="Edu03-Tab" tabindex="0">
-                                            <div class="card mb-3">
-                                                <div class="row g-0">
-                                                    <div class="col-md-4">
-                                                        <img src="css/building-q-b (1).jpg" class="w-100"/>
-
-                                                    </div>
-                                                    <div class="col-md-8">
-                                                        <div class="card-body">
-                                                            <h5 class="card-title">Building Q</h5>
-                                                            <p class="card-text">Training rooms with different sizes and configurations are available for customized corporate training, seminars and special events.</p>
-                                                            <p class="card-text">Capacity: 30 per room (three rooms available)</p>
-                                                            <div class="justify-content-end">
-                                                                <button class="btn btn-warning"> view availability</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                </div>
+                                <div class="mt-2 ms-4">
+                                    <button class="btn btn-primary nextsec" type="button">Continue</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </form>
             </div>
+
         </div>
     </div>
-</div>
-<script
-        src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-<script src="main.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+            crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
 </html>

@@ -1,9 +1,21 @@
-
-
 $(function(){
 
+
+    //to do
+    //1 validate index
+    //2 submit navigate to application
+    //3 set minimun date for birthday
+    // send birthday to personal info div
     // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (() => {
+    let today = new Date()
+    let ageLimit = today.getFullYear() - 18
+    today.setFullYear(ageLimit)
+
+
+$('#Bday').setAttribute('max',`${today.getFullYear()}-${today.getMonth()}-${today.getDay()}`)
+
+
+    /*(() => {
         'use strict'
 
         // Fetch all the forms we want to apply custom Bootstrap validation styles to
@@ -21,7 +33,7 @@ $(function(){
             }, false)
         })
     })()
-
+*/
 
     // add a p element if they choose a job with
 
