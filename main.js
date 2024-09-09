@@ -7,39 +7,78 @@ $(function(){
     //3 set minimun date for birthday
     // send birthday to personal info div
     // Example starter JavaScript for disabling form submissions if there are invalid fields
-    let today = new Date()
-    let ageLimit = today.getFullYear() - 18
-    today.setFullYear(ageLimit)
 
 
-$('#Bday').setAttribute('max',`${today.getFullYear()}-${today.getMonth()}-${today.getDay()}`)
+$('#Bday').on('change',function (){
+    $('#DOB').val(this.value)
+
+})
+
+    $('#goToApp').on('click', function (){
+        const $index =  $(this).parents('.indForm')
 
 
-    /*(() => {
-        'use strict'
 
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        const forms = document.querySelectorAll('.needs-validation')
+        if ($index.find(':invalid').length){
+            //add validation
+            $('#firstForm').addClass('was-validated')
 
-        // Loop over them and prevent submission
-        Array.from(forms).forEach(form => {
-            form.addEventListener('submit', event => {
-                if (!form.checkValidity()) {
-                    event.preventDefault()
-                    event.stopPropagation()
-                }
 
-                form.classList.add('was-validated')
-            }, false)
-        })
-    })()
-*/
+        }
+        else{
+            $('#firstForm').removeClass('was-validated')
+            window.location.href = "application.html";
+        }
+    })
+  $('#personb').on('click',function (){
 
-    // add a p element if they choose a job with
+      if ($('#v-pills-Personal').find(':invalid').length){
+          $('#v-pills-Personal').addClass('was-validated')
+      }
+       else {
+          $('#v-pills-Personal').removeClass('was-validated')
+          $('#v-pills-Position-tab').click()
+      }
 
-    //hide add more button if clicked ?
 
-    //
+
+  })
+    $('#positB').on('click',function (){
+
+        if ($('#v-pills-Position').find(':invalid').length){
+            $('#v-pills-Position').addClass('was-validated')
+        }
+        else{
+            $('#v-pills-Position').removeClass('was-validated')
+            $('#v-pills-WrkExp-tab').click()
+        }
+
+
+
+
+    })
+    $('#wrkexpb').on('click',function (){
+
+        if ($('#v-pills-WrkExp').find(':invalid').length){
+
+            $('#v-pills-WrkExp').addClass('was-validated')
+        }
+        else{
+            $('#v-pills-WrkExp').removeClass('was-validated')
+            $('#v-pills-Education-tab').click()
+        }
+    })
+    $('#edub').on('click',function (){
+
+        if ($('#v-pills-Education').find(':invalid').length){
+            //add validation
+            $('#v-pills-Education').addClass('was-validated')
+        }
+        else{
+            $('#v-pills-Education').removeClass('was-validated')
+        }
+
+    })
     $('.APL-PREV-EMPLOY').on('change',function (e){
 
         if(this.value == 'Y'){
